@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=h2, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #pass {
+            background-color: rgb(87, 212, 221);
+            color: rgb(5, 20, 15);
+
+
+        }
+
+        body {
+            background-color: rgb(104, 110, 201);
+            justify-content: center;
+            padding: 20px;
+            align-items: center;
+            background-image: url("https://www.shutterstock.com/shutterstock/videos/3709266813/thumb/1.jpg?ip=x480");
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            height: 100vh;
+            margin: 0;
+        }
+
+
+        .he {
+            color: rgb(2, 26, 134);
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+
+
+
+        }
+
+        .blue {
+            justify-content: center;
+            width: 700px;
+            height: 100px;
+            align-items: center;
+            text-align: center;
+            margin-top: 220px;
+            background-color: rgb(66, 141, 202);
+            border-radius: 20px;
+            box-shadow: 20px 20px 20px 20px;
+
+        }
+
+        .click {
+            background-color: rgb(16, 192, 192);
+            box-shadow: 3px 3px 3px 3px;
+            border-radius: 20px;
+
+        }
+    </style>
+</head>
+
+<body>
+    <div class="blue">
+        <h2 class="he">passcode Toggle</h2>
+        <input type="password" name="" id="pass" placeholder="Enter your Passcode">
+        <button class="click" onclick="toggle()">show/hide</button>
+        <script>
+            function toggle() {
+                let input = document.getElementById("pass")
+                if (input.type == "password") {
+                    input.type = "text"
+                }
+                else {
+                    input.type = "password";
+                }
+            }
+
+        </script>
+
+    </div>
+
+</body>
+
+</html>
